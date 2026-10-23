@@ -1,5 +1,5 @@
 const BASE = '/korea-travel-guide';
-const CACHE = 'ktg-202610231106';
+const CACHE = 'ktg-202610231154';
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll([BASE + '/', BASE + '/index.html'])));
   self.skipWaiting();
